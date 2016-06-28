@@ -80,7 +80,7 @@ public class Play implements OnBufferingUpdateListener,
             mediaPlayer.setDataSource(videoUrl);
             mediaPlayer.prepare();//prepare之后自动播放
 
-            mediaPlayer.start();
+        //    mediaPlayer.start();
           //  Toast.makeText(this, "默认Toast样式2", Toast.LENGTH_SHORT).show();
         } catch (IllegalArgumentException e) {
             // TODO Auto-generated catch block
@@ -114,7 +114,7 @@ public class Play implements OnBufferingUpdateListener,
      * 通过onPrepared播放
      */
     public void onPrepared(MediaPlayer arg0) {
-        arg0.start();
+       arg0.start();  //缓存完毕自动播放
         Log.e("mediaPlayer", "onPrepared");
     }
 
